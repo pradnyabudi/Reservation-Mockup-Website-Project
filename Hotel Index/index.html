@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Opening Animation -->
+    <div class="opening-animation">
+        <div class="welcome-text">
+            <h1 class="hotel-name">YOUR BRAND</h1>
+            <p class="tagline">Your tagline here</p>
+        </div>
+    </div>
+
+    <!-- Main Content (hidden until animation finishes) -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-container">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+                <div class="book-now">
+                    <button href="Book/book.html" class="book-now-btn" >RESERVE</button><br>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="video-container">
+                <video autoplay muted loop id="hero-video">
+                    <source src="video/hotel-video.mp4" type="video/mp4">
+                   
+                </video>
+                <div class="video-overlay"></div>
+                <div class="hero-content">
+                    <h1>Your Tagline Here</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <button class="explore-btn">EXPLORE MORE</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="promo-slider">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <div class="slide-content">
+                            <div><button class="promo-btn">DETAIL PROMO</button></div>
+                            <img src="images/1.png">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div><button class="promo-btn">DETAIL PROMO</button></div>
+                            <img src="images/2.png">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div><button class="promo-btn">DETAIL PROMO</button></div>
+                            <img src="images/3.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slide-indicators"></div>
+                    <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+        <div class="menu-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li class="has-submenu">
+                    <a href="#">Visit Our Outlets <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a class="sub" href="#">Sanur</a></li>
+                        <li><a class="sub" href="#">Kedewatan</a></li>
+                        <li><a class="sub"href="#">Buahan</a></li>
+                        <li><a class="sub"href="#">Tegallalang</a></li>
+                        <li><a class="sub"href="#">Tampak Siring</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Dining</a></li>
+                <li><a href="#">Spa</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+<br>
+<br>
+<br>
+    <!-- About Us Section -->
+<section class="about-section">
+    <div class="about-container">
+    
+                <div class="about-image">
+                    <!-- Slider khusus untuk about section -->
+                    <div class="about-villa-slider">
+                        <div class="about-slider-container">
+                            <div class="about-slide active">
+                                <img src="images/about1.png" alt="">
+                            </div>
+                            <div class="about-slide">
+                                <img src="images/about2.png" alt="">
+                            </div>
+                            <div class="about-slide">
+                                <img src="images/about3.png" alt="">
+                            </div>
+                            <div class="about-slide">
+                                <img src="images/about4.png" alt="">
+                            </div>
+                            <div class="about-slide">
+                                <img src="images/about5.png" alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="about-slider-controls">
+                            <button class="about-prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <div class="about-slide-indicators"></div>
+                            <button class="about-next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            
+        <div class="about-content">
+            <h2 class="section-title"><span> OUR STORY</span></h2>
+            <p class="section-subtitle">Discover the legacy of Your Brand</p>
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, beatae laboriosam! Nam esse, ex natus odio quisquam, id repellat eos fugit non iure distinctio amet perspiciatis voluptatem beatae dolor at.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium eos iste voluptates, sunt enim accusantium itaque repellat autem assumenda sed corporis repudiandae error eligendi! Dolores aut molestias molestiae unde numquam!</p>
+            </div>
+            <div class="achievements">
+                <div class="achievement-item">
+                    <span class="achievement-number">12+</span>
+                    <span class="achievement-text">Years of Excellence</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number">500+</span>
+                    <span class="achievement-text">Happy Guests Daily</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-number">50+</span>
+                    <span class="achievement-text">Awards Won</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="signature">
+        <img src="images/TTD.png" alt="CEO Signature">
+        <p>Founder Name - Founder & CEO</p>
+    </div>
+</section>
+
+<!-- Outlets Section -->
+<!-- Outlets Section -->
+<section class="outlets-section">
+    <div class="section-header">
+        <h2 class="section-title">OUR OUTLETS</h2>
+        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <div class="outlets-container">
+        <!-- Outlet 1 (Visible by default) -->
+        <div class="outlet-card">
+            <div class="outlet-image" style="background-image: url('images/ot.png');">
+                <div class="outlet-badge">Beachfront</div>
+            </div>
+            <div class="outlet-content">
+                <h3>OUTLET 1</h3>
+                <div class="outlet-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bali, Indonesia</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse tempore veniam earum accusantium saepe doloremque, repellendus harum excepturi iusto officia quisquam!</p>
+                <div class="outlet-features">
+                    <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                    <span><i class="fas fa-swimming-pool"></i> Infinity Pool</span>
+                    <span><i class="fas fa-utensils"></i> 3 Restaurants</span>
+                </div>
+                <button class="outlet-btn">Explore Outlet</button>
+            </div>
+        </div>
+
+        <!-- Outlet 2 (Visible by default) -->
+        <div class="outlet-card">
+            <div class="outlet-image" style="background-image: url('images/ot1.png');">
+                <div class="outlet-badge">Jungle Retreat</div>
+            </div>
+            <div class="outlet-content">
+                <h3>OUTLET 2</h3>
+                <div class="outlet-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Ubud, Indonesia</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aut culpa magni aperiam voluptas deserunt, excepturi iure nihil perspiciatis, veritatis pariatur nobis expedita!</p>
+                <div class="outlet-features">
+                    <span><i class="fas fa-spa"></i> Spa</span>
+                    <span><i class="fas fa-mountain"></i> Rice Terrace View</span>
+                    <span><i class="fas fa-yoga"></i> Yoga Pavilion</span>
+                </div>
+                <button class="outlet-btn">Explore Outlet</button>
+            </div>
+        </div>
+
+        <!-- Outlet 3 (Visible by default) -->
+        <div class="outlet-card">
+            <div class="outlet-image" style="background-image: url('images/ot2.png');">
+                <div class="outlet-badge">Cliffside</div>
+            </div>
+            <div class="outlet-content">
+                <h3>OUTLET 3</h3>
+                <div class="outlet-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Nusa Penida, Indonesia</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro totam aut dolorem dolorum, nam quia suscipit molestias ea nihil officia pariatur. Libero quos hic accusamus!</p>
+                <div class="outlet-features">
+                    <span><i class="fas fa-umbrella-beach"></i> Private Beach</span>
+                    <span><i class="fas fa-glass-cheers"></i> Sunset Bar</span>
+                    <span><i class="fas fa-golf-ball"></i> Golf Course</span>
+                </div>
+                <button class="outlet-btn">Explore Outlet</button>
+            </div>
+        </div>
+
+        <!-- Additional outlets (Hidden by default) -->
+        <div class="outlet-card hidden-outlet">
+            <div class="outlet-image" style="background-image: url('images/ot3.png');">
+                <div class="outlet-badge">City Center</div>
+            </div>
+            <div class="outlet-content">
+                <h3>OUTLET 4</h3>
+                <div class="outlet-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Jakarta, Indonesia</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatibus. Quisquam, voluptatem. Quisquam, voluptatem. Quisquam, voluptatem.</p>
+                <div class="outlet-features">
+                    <span><i class="fas fa-building"></i> City View</span>
+                    <span><i class="fas fa-shopping-bag"></i> Shopping Mall</span>
+                    <span><i class="fas fa-subway"></i> Near Metro</span>
+                </div>
+                <button class="outlet-btn">Explore Outlet</button>
+            </div>
+        </div>
+
+        <div class="outlet-card hidden-outlet">
+            <div class="outlet-image" style="background-image: url('images/ot4.png');">
+                <div class="outlet-badge">Mountain View</div>
+            </div>
+            <div class="outlet-content">
+                <h3>OUTLET 5</h3>
+                <div class="outlet-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bandung, Indonesia</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatibus. Quisquam, voluptatem. Quisquam, voluptatem. Quisquam, voluptatem.</p>
+                <div class="outlet-features">
+                    <span><i class="fas fa-mountain"></i> Mountain View</span>
+                    <span><i class="fas fa-coffee"></i> Coffee Plantation</span>
+                    <span><i class="fas fa-fire"></i> Hot Springs</span>
+                </div>
+                <button class="outlet-btn">Explore Outlet</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="view-all-container">
+        <button class="view-all-btn">View All Outlets</button>
+    </div>
+</section>
+
+
+<!-- Facilities Section -->
+<section class="facilities-section">
+    <div class="facilities-header">
+        <h2 class="section-title"><span>OUR FACILITIES</span></h2>
+        <p class="section-subtitle">Designed for your comfort and pleasure</p>
+    </div>
+    <div class="facilities-container">
+        <div class="facility-tabs">
+            <button class="facility-tab active" data-tab="wellness">Wellness</button>
+            <button class="facility-tab" data-tab="dining">Dining</button>
+            <button class="facility-tab" data-tab="recreation">Recreation</button>
+            <button class="facility-tab" data-tab="business">Business</button>
+        </div>
+        <div class="facility-content active" id="wellness">
+            <div class="facility-slider">
+                <div class="facility-slide">
+                    <div class="facility-image" style="background-image: url('images/spa.png');"></div>
+                    <div class="facility-info">
+                        <h3>Our Spa</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam maxime eum sed? Architecto dolores deserunt consectetur! Odio maiores numquam vitae, quod, doloribus amet neque, modi ratione dicta repellat error!</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check"></i> Traditional Balinese treatments</li>
+                            <li><i class="fas fa-check"></i> Couple's massage rooms</li>
+                            <li><i class="fas fa-check"></i> Herbal steam baths</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="facility-content" id="dining">
+            <div class="facility-slider">
+                <div class="facility-slide">
+                    <div class="facility-image" style="background-image: url('images/restaurant.png');"></div>
+                    <div class="facility-info">
+                        <h3>Restaurants</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est enim dicta sapiente praesentium a architecto atque dolor voluptates ut unde? Eveniet, nostrum? Error magni beatae natus! Doloribus incidunt perferendis similique?</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check"></i> 5 unique dining venues</li>
+                            <li><i class="fas fa-check"></i> Master chefs from around the world</li>
+                            <li><i class="fas fa-check"></i> Organic garden-to-table ingredients</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="facility-content" id="recreation">
+            <div class="facility-slider">
+                <div class="facility-slide">
+                    <div class="facility-image" style="background-image: url('images/pool.png');"></div>
+                    <div class="facility-info">
+                        <h3>Our Pool</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, necessitatibus, distinctio quibusdam labore, ullam accusantium quos assumenda earum excepturi enim fuga! Molestias et debitis quam fugiat autem laboriosam cupiditate iste?</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check"></i> Olympic-size infinity pools</li>
+                            <li><i class="fas fa-check"></i> Water sports center</li>
+                            <li><i class="fas fa-check"></i> Tennis and squash courts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="facility-content" id="business">
+            <div class="facility-slider">
+                <div class="facility-slide">
+                    <div class="facility-image" style="background-image: url('images/meeting.png');"></div>
+                    <div class="facility-info">
+                        <h3>Business Facilities</h3>
+                        <p>State-of-the-art business facilities designed to meet all your professional needs while you're away from the office.</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check"></i> 24-hour business center</li>
+                            <li><i class="fas fa-check"></i> Conference rooms for 10-500 people</li>
+                            <li><i class="fas fa-check"></i> High-speed internet and AV equipment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Special Packages Section -->
+<section class="packages-section">
+    <div class="packages-header">
+        <h2 class="section-title">SPECIAL PACKAGES</h2>
+        <p class="section-subtitle">Curated experiences for unforgettable memories</p>
+    </div>
+    <div class="packages-container">
+        <!-- Package 1 (Visible by default) -->
+        <div class="package-card">
+            <div class="package-image" style="background-image: url('images/pack1.png');">
+                <div class="package-price">$1,299<span>/night</span></div>
+            </div>
+            <div class="package-content">
+                <h3>Romantic Honeymoon Escape</h3>
+                <p class="package-duration">5 Days 4 Nights</p>
+                <p class="package-description">The ultimate romantic getaway with private dinners, couple's spa treatments, and luxury suite accommodation.</p>
+                <div class="package-highlights">
+                    <h4>Package Highlights:</h4>
+                    <ul>
+                        <li>Private beachfront dinner</li>
+                        <li>Daily couple's spa treatments</li>
+                        <li>Luxury suite with pool</li>
+                        <li>Airport transfers</li>
+                    </ul>
+                </div>
+                <button class="package-btn">Book Package</button>
+            </div>
+        </div>
+
+        <!-- Package 2 (Visible by default) -->
+        <div class="package-card">
+            <div class="package-image" style="background-image: url('images/pack2.png');">
+                <div class="package-price">$899<span>/night</span></div>
+            </div>
+            <div class="package-content">
+                <h3>Family Fun Adventure</h3>
+                <p class="package-duration">4 Days 3 Nights</p>
+                <p class="package-description">Create lasting family memories with activities for all ages and special amenities for children.</p>
+                <div class="package-highlights">
+                    <h4>Package Highlights:</h4>
+                    <ul>
+                        <li>Kids club access</li>
+                        <li>Family cooking class</li>
+                        <li>Interconnecting rooms</li>
+                        <li>Daily breakfast buffet</li>
+                    </ul>
+                </div>
+                <button class="package-btn">Book Package</button>
+            </div>
+        </div>
+
+        <!-- Package 3 (Visible by default) -->
+        <div class="package-card">
+            <div class="package-image" style="background-image: url('images/pack3.png');">
+                <div class="package-price">$1,099<span>/night</span></div>
+            </div>
+            <div class="package-content">
+                <h3>Wellness Retreat</h3>
+                <p class="package-duration">7 Days 6 Nights</p>
+                <p class="package-description">Rejuvenate your mind, body and soul with our comprehensive wellness program.</p>
+                <div class="package-highlights">
+                    <h4>Package Highlights:</h4>
+                    <ul>
+                        <li>Daily yoga and meditation</li>
+                        <li>Personal wellness consultation</li>
+                        <li>Detox meals program</li>
+                        <li>Unlimited spa access</li>
+                    </ul>
+                </div>
+                <button class="package-btn">Book Package</button>
+            </div>
+        </div>
+
+        <!-- Additional packages (Hidden by default) -->
+        <div class="package-card hidden-package">
+            <div class="package-image" style="background-image: url('images/pack4.png');">
+                <div class="package-price">$1,199<span>/night</span></div>
+            </div>
+            <div class="package-content">
+                <h3>Adventure Seeker</h3>
+                <p class="package-duration">6 Days 5 Nights</p>
+                <p class="package-description">For thrill-seekers who want to explore the wild side of our destination with guided excursions.</p>
+                <div class="package-highlights">
+                    <h4>Package Highlights:</h4>
+                    <ul>
+                        <li>3 guided adventure tours</li>
+                        <li>All equipment included</li>
+                        <li>Professional photographer</li>
+                        <li>Gourmet packed lunches</li>
+                    </ul>
+                </div>
+                <button class="package-btn">Book Package</button>
+            </div>
+        </div>
+
+        <div class="package-card hidden-package">
+            <div class="package-image" style="background-image: url('images/pack5.png')">
+                <div class="package-price">$999<span>/night</span></div>
+            </div>
+            <div class="package-content">
+                <h3>Culinary Journey</h3>
+                <p class="package-duration">5 Days 4 Nights</p>
+                <p class="package-description">A gastronomic adventure featuring cooking classes, market tours, and exclusive dining experiences.</p>
+                <div class="package-highlights">
+                    <h4>Package Highlights:</h4>
+                    <ul>
+                        <li>3 cooking classes</li>
+                        <li>Local market tour</li>
+                        <li>Chef's table dinner</li>
+                        <li>Recipe book gift</li>
+                    </ul>
+                </div>
+                <button class="package-btn">Book Package</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="view-all-container">
+        <button class="view-all-btn">View All Packages</button>
+    </div>
+</section>
+
+
+
+  <!-- Attractions Section -->
+  <section class="attractions-section">
+    <div class="attractions-header">
+      <h2 class="section-title"><span>BALI ATTRACTIONS</span></h2>
+      <p class="section-subtitle">Discover the magic of Bali</p>
+      <p class="scroll-hint">← Scroll sideways to explore more →</p>
+    </div>
+    
+    <!-- Peta Bali Statis dengan Titik Merah -->
+    <div class="attractions-map-container">
+      <img src="images/bali-map.png" alt="Bali Map" class="bali-static-map">
+      
+      <!-- Titik-titik lokasi (posisi disesuaikan manual) -->
+      <div class="map-point" style="top: 17%; left: 49%;">
+        <a href="https://maps.google.com/?q=-8.8292,115.0850" target="_blank" class="point-link"></a>
+        <div class="point-tooltip">Uluwatu Temple</div>
+      </div>
+      
+      <div class="map-point" style="top: 40%; left: 55%;">
+        <a href="https://maps.google.com/?q=-8.4266,115.2809" target="_blank" class="point-link"></a>
+        <div class="point-tooltip">Tegallalang Rice Terraces</div>
+      </div>
+      
+      <div class="map-point" style="top: 25%; left: 60%;">
+        <a href="https://maps.google.com/?q=-8.2405,115.3775" target="_blank" class="point-link"></a>
+        <div class="point-tooltip">Mount Batur</div>
+      </div>
+      
+      <div class="map-point" style="top: 30%; left: 40%;">
+        <a href="https://maps.google.com/?q=-8.7238,115.1707" target="_blank" class="point-link"></a>
+        <div class="point-tooltip">Waterbom Bali</div>
+      </div>
+      
+      <div class="map-point" style="top: 45%; left: 52%;">
+        <a href="https://maps.google.com/?q=-8.5186,115.2589" target="_blank" class="point-link"></a>
+        <div class="point-tooltip">Sacred Monkey Forest</div>
+      </div>
+    </div>
+    
+    <!-- Horizontal Scrolling Attractions Carousel -->
+    <div class="attractions-carousel-container">
+      <div class="attractions-carousel">
+        <!-- Card 1 -->
+        <div class="attraction-card">
+          <div class="attraction-image" style="background-image: url('images/attraction-1.jpg');"></div>
+          <div class="attraction-content">
+            <h3>Waterbom Bali</h3>
+            <p>Asia's best waterpark located in the heart of Kuta, perfect for family fun.</p>
+            <div class="attraction-meta">
+              <span><i class="fas fa-clock"></i> 10:00 AM - 6:00 PM</span>
+              <span><i class="fas fa-ticket-alt"></i> $35/person</span>
+            </div>
+            <a href="https://maps.google.com/?q=-8.7238,115.1707" target="_blank" class="attraction-btn">View on Map</a>
+          </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="attraction-card">
+          <div class="attraction-image" style="background-image: url('images/attraction-2.jpg');"></div>
+          <div class="attraction-content">
+            <h3>Sacred Monkey Forest</h3>
+            <p>Nature reserve and temple complex in Ubud inhabited by Balinese long-tailed monkeys.</p>
+            <div class="attraction-meta">
+              <span><i class="fas fa-clock"></i> 8:30 AM - 6:00 PM</span>
+              <span><i class="fas fa-ticket-alt"></i> $8/person</span>
+            </div>
+            <a href="https://maps.google.com/?q=-8.5186,115.2589" target="_blank" class="attraction-btn">View on Map</a>
+          </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="attraction-card">
+          <div class="attraction-image" style="background-image: url('images/attraction-3.jpg');"></div>
+          <div class="attraction-content">
+            <h3>Uluwatu Temple</h3>
+            <p>Iconic sea temple with stunning cliff views and traditional Kecak dance performances.</p>
+            <div class="attraction-meta">
+              <span><i class="fas fa-clock"></i> 9:00 AM - 7:00 PM</span>
+              <span><i class="fas fa-ticket-alt"></i> $5/person</span>
+            </div>
+            <a href="https://maps.google.com/?q=-8.8292,115.0850" target="_blank" class="attraction-btn">View on Map</a>
+          </div>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="attraction-card">
+          <div class="attraction-image" style="background-image: url('images/attraction-4.jpg');"></div>
+          <div class="attraction-content">
+            <h3>Tegallalang Rice Terraces</h3>
+            <p>Beautifully sculpted rice fields offering breathtaking views and photo opportunities.</p>
+            <div class="attraction-meta">
+              <span><i class="fas fa-clock"></i> 8:00 AM - 6:00 PM</span>
+              <span><i class="fas fa-ticket-alt"></i> $3/person</span>
+            </div>
+            <a href="https://maps.google.com/?q=-8.4266,115.2809" target="_blank" class="attraction-btn">View on Map</a>
+          </div>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="attraction-card">
+          <div class="attraction-image" style="background-image: url('images/attraction-5.jpg');"></div>
+          <div class="attraction-content">
+            <h3>Mount Batur</h3>
+            <p>Active volcano with spectacular sunrise trekking experiences.</p>
+            <div class="attraction-meta">
+              <span><i class="fas fa-clock"></i> 24 hours</span>
+              <span><i class="fas fa-ticket-alt"></i> $25/person</span>
+            </div>
+            <a href="https://maps.google.com/?q=-8.2405,115.3775" target="_blank" class="attraction-btn">View on Map</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Custom Scrollbar Indicator -->
+    <div class="custom-scrollbar">
+      <div class="scroll-thumb"></div>
+    </div>
+  </section>
+
+
+  
+
+
+
+    <!-- Guest Comments Section -->
+    <section class="guest-comments-section">
+        <div class="comments-header">
+            <h2 class="section-title">GUEST REVIEWS</h2>
+            <p class="section-subtitle">What our guests say about us</p>
+            <button class="view-all-btn">View All Comments</button>
+            <div class="overall-rating">
+                <div class="average-rating-stars" id="overallStars"></div>
+                <span class="average-rating-value" id="overallRating">0.0</span>
+                <span class="total-reviews">(<span id="totalReviews">0</span> reviews)</span>
+            </div>
+        </div>
+        
+        <!-- Scrolling Comments Container -->
+        <div class="comments-scroll-container">
+            <div class="comments-scroller">
+                <!-- Comments will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Comment Form -->
+        <div class="comment-form-container">
+            <h3>Share Your Experience</h3>
+            <form id="commentForm" enctype="multipart/form-data">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="commentName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="commentEmail" placeholder="Your Email" required>
+                    </div>
+                </div>
+                
+                <div class="form-group rating-group">
+                    <label>Your Rating:</label>
+                    <div class="star-rating">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                        <input type="hidden" id="commentRating" value="0" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <textarea id="commentText" placeholder="Your review..." rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="commentPhoto">Upload Photo (Optional)</label>
+                    <input type="file" id="commentPhoto" accept="image/*">
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
+        </div>
+        
+        <!-- View All Modal -->
+        <div class="modal-overlay" id="commentsModal">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <h3>All Guest Comments</h3>
+                    <div class="modal-rating">
+                        <div class="average-rating-stars" id="modalStars"></div>
+                        <span class="average-rating-value" id="modalRating">0.0</span>
+                    </div>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-content">
+                    <!-- Comments will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+<!-- Contact Section -->
+<section class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2 class="section-title"><span>CONTACT US</span></h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Headquarters</h4>
+                    <p>Adress</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <h4>Reservations</h4>
+                    <p>+62 361 1234567</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <p>reservation@youremail.com</p>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="contactSubject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-contact">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="Luxury Hotels">
+            <p>Redefining brand hospitality in Bali since 2024.</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <!-- <a href="#"><i class="fab fa-tripadvisor"></i></a> -->
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms & Suites</a></li>
+                <li><a href="#">Dining</a></li>
+                <li><a href="#">Spa</a></li>
+                <li><a href="#">Special Offers</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Your Hotels Bali. All Rights Reserved.</p>
+        <div class="payment-methods">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-paypal"></i>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Float Button -->
+<div class="whatsapp-float">
+    <a href="https://wa.me/6281234567890" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Send Massage</span>
+    </a>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
